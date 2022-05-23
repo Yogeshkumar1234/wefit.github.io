@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="blog videos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antim Salam</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="/images/banner-bg.jpg" alt="logo"></a>
+        <div class="toggle"><a href="../../index.html"><img src="../../images/toggle.png" alt=""></a>"></a></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2><span>Antim Salam</span></h2>
+            <p>salman khan best movie ever</p>
+            <a href="#" class="play" onclick="toggle()"><img src="../../images/play button.png" alt="Watch Now">Watch Now</a>
+
+        </div>
+    </div>
+    <div class="trailer">
+        <img src="../../images/close.png"  alt="Close" onclick="toggle()" class="close">
+        <video src="antim salam.mp4" controls="true"></video>
+    </div>
+
+    <script>
+        function toggle(){
+            var trailer=document.querySelector('.trailer');
+            let video=document.querySelector('.video');
+            trailer.classList.toggle('active');
+            video.CurrentTime=0;
+            video.pause();
+        }
+    </script>
+
+</body>
+</html>
